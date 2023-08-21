@@ -8,7 +8,7 @@ print(2 * 2)
 print(3 - 3)
 print(45 / 23)
 
-# esto es un comentario
+# esto es un comentario algo chistoso 
 
 """
 esto
