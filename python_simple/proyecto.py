@@ -5,6 +5,7 @@ options = ('piedra', 'papel', 'tijera  ')
 user_option = input('piedra, papel o tijera ---->   ')
 user_option == user_option.lower()
 
+#esta parte nos alerta en caso de que el usuario escoja una opcion no valida 
 if not user_option in options:
   print('esa opcion no es valida')
 computer_option = random.choice(options)
