@@ -1,6 +1,16 @@
-user_option = input('piedra, papel o tijera ----> ')
+import random
+
+options = ('piedra', 'papel', 'tijera  ')
+
+user_option = input('piedra, papel o tijera ---->   ')
 user_option == user_option.lower()
-computer_option = 'piedra'
+
+if not user_option in options:
+  print('esa opcion no es valida')
+computer_option = random.choice(options)
+
+print('User options ----> ', user_option)
+print('Computer_option ---->  ', computer_option)
 
 
 #si los dos tiene las mismas opciones es empate
