@@ -19,7 +19,7 @@ print('is_single =>', is_single)
 print(type(is_single))
 
 # inputs
-my_age = input('Â¿CuÃ¡l es tu edad? ')
+my_age = input('cual es tu edad? ')
 print('my_age =>', my_age)
 print(type(my_age))
 
