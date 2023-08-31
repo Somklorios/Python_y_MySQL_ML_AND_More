@@ -13,6 +13,9 @@ while True:
   print('ROUND', rounds)
   print('* ' * 20)
 
+  print('computer_wins', computer_wins)
+  print('user_wins', user_wins)
+
   user_option = input('piedra, papel o tijera ---->   ')
   user_option == user_option.lower()
 
