@@ -19,9 +19,15 @@ while True:
   user_option = input('piedra, papel o tijera ---->   ')
   user_option == user_option.lower()
 
+  # esto suma los rounds 
+  rounds += 1
+
   #esta parte nos alerta en caso de que el usuario escoja una opcion no valida 
   if not user_option in options:
     print('esa opcion no es valida')
+    continue
+  #Este continue, dice, ignore todo de aqui, linea 28 para abajo y reinicia
+  # asi se reinicia el juego y podemos hacerlo mas facil
   computer_option = random.choice(options)
 
   print('User options ----> ', user_option)
@@ -73,5 +79,4 @@ while True:
     print('El ganador es el usuario')
     break
 
-  rounds += 1
     
