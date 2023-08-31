@@ -2,6 +2,9 @@ import random
 
 options = ('piedra', 'papel', 'tijera  ')
 
+computer_wins = 0
+user_wins = 0
+
 rounds = 1
 
 #con while + tab podemos indexar la secuencia dentro e while
@@ -9,7 +12,7 @@ while True:
   print('* ' * 20)
   print('ROUND', rounds)
   print('* ' * 20)
-  
+
   user_option = input('piedra, papel o tijera ---->   ')
   user_option == user_option.lower()
 
@@ -31,25 +34,41 @@ while True:
     if computer_option == 'tijera':
       print('piedra gana a tijera')
       print('user gano')
+      user_wins += 1
     else:
       print('piedra gana a tijera')
       print('computer gano')
+      computer_wins += 1
 
   #Si el usuario tiene papel y la computadora tiene piedra, gana la piedra    
   elif user_option == 'papel':
     if computer_option == 'piedra':
       print('papel gana a piedra')
       print('usuario gano')
+      user_wins += 1
     else:
       print('tijera gana a papel')
       print('computer gana')
+      computer_wins += 1 #la compu gano
 
   #Si el usuario tiene tijera y la computadora tiene papel, gana la tijera       
   elif user_option == 'tijera':
     if computer_option == 'papel':
       print('tijera gana a papel')
       print('user gano')
+      user_wins += 1
     else:
       print('piedra gana a tijera')
       print('computer gana')
+      computer_wins += 1
+
+  if computer_wins == 2:
+    print('El ganador es la computadora')    
+    break
+
+  if user_wins == 2:
+    print('El ganador es el usuario')
+    break
+
+  rounds += 1
     
