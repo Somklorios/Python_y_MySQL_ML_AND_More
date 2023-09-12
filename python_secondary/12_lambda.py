@@ -13,16 +13,15 @@ increment_v2 = lambda x : x + 1
 
 result = increment_v2(20)
 print(result)
-_Producción:_
-21
-La función lambda puede tomar cualquier cantidad de argumentos, pero solo puede tener una expresión.
+#Producción:_
+#La función lambda puede tomar cualquier cantidad de argumentos, pero solo puede tener una expresión.
 
 datos_completos = lambda name, last_name, age, countrie: f'Sus datos completos son {name.title()} {last_name.title()} tiene {age} años y vive en {countrie.title()}'
 text = datos_completos('camilo', 'mejia', 35, 'colombia')
 print(text)
-_Producción:_
-Sus datos completos son Camilo Mejia tiene 35 años y vive en Colombia
-Lectura de Apoyo
+#_Producción:_
+#Sus datos completos son Camilo Mejia tiene 35 años y vive en Colombia
+
 
 
 
