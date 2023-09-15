@@ -19,7 +19,7 @@ print(result)
 #_____ modulo para el manejo de horas y fechas_____
 import time 
 timestamp = time.time()
-#hora actual en formato de computadora
+#hora actual en  formato de computadora
 local = time.localtime()
 #indica la horal loca
 result = time.asctime()
