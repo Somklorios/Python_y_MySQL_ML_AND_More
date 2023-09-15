@@ -5,7 +5,31 @@
 
 import utils 
 
-keys, values = mod.get_population()
-print(keys, values)
 
-print(utils.A)
+data = [
+  {
+	'Country': 'Colombia',
+	'Population': 500
+  },
+  {
+	'Country': 'Bolivia',
+	'Population': 300
+  }
+  ]
+
+def run():
+  keys, values = utils.get_population()
+  print(keys, values)
+
+  country = input("type country =>  ")
+
+  result = utils.population_by_country(data, country)
+  print(result)
+
+if __name__ == "__name__":
+  run()
+    
+# que es este if?
+
+# este if, es el entry point, que le dice al archivo main.py que si es ejecutado desde la terminal, se ejecute la funcion run(), pero si es ejecutado desde otro archivo, esto no se ejecutara.
+
