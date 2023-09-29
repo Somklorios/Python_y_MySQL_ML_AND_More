@@ -1,4 +1,4 @@
-import app.example as example
+import main
 
-print(example.data)
-example.run()
+print(main.data)
+#main.run()
